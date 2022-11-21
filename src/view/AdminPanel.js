@@ -43,8 +43,9 @@ export const AdminPanel = () => {
         <StyledPanel>
             <Heading>Панель управления</Heading>
             <ButtonWrapper>
-                <Button text={'Добавить юзера'} color={'white'} bgColor={'red'}/>
-                <Button text={'Изменить юзера'} color={'darkgreen'} bgColor={'green'}/>
+                <Button text={'Add user'} color={'white'} bgColor={'red'}/>
+                <Button text={'Del user by status'} color={'darkgreen'} bgColor={'green'}/>
+                <Button text={'Get with Max Org'} color={'white'} bgColor={'blue'}/>
             </ButtonWrapper>
         </StyledPanel>
     </StyledPanelWrapper>

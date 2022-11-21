@@ -2,7 +2,7 @@ import { action, makeAutoObservable,} from 'mobx';
 import * as profileApi from '../../api/profile';
 
 class WorkerStore {
-    workerInfo = {
+    workersInfo = [{
         id: 0,
         name: "",
         coordinates: {
@@ -27,15 +27,15 @@ class WorkerStore {
             }
         }
 
-    }
+    }]
     constructor() {
         makeAutoObservable(this);
     }
 
-    @action
-    getWorkerInfo = () => {
-        return profileApi.getWorker().then(res => {
-            this.profileInfo = {
+    @action()
+    getListOfWorkerInfo = () => {
+        return profileApi.getListOfWorkers().then(res => {
+            this.workerInfo = [{
                 id: 0,
                 name: "",
                 coordinates: {
@@ -59,7 +59,7 @@ class WorkerStore {
                         }
                     }
                 }
-            }
+            }]
         });
     }
 }

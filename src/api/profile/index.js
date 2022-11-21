@@ -1,16 +1,6 @@
 import axios from 'axios';
 import * as profileUrls from '../urls';
 
-export const getWorker= () => {
-    return axios.get(profileUrls.api, {
-        headers: {
-            'content-type': `application/xml`
-        }
-    })
-        .then((res) => res.data)
-        .catch((err) => console.log('error:', err))
-};
-
 export const getListOfWorkers = () => {
     return axios.get(profileUrls.api, {
         headers: {
