@@ -13,12 +13,9 @@ const StyledPanelWrapper = styled.section`{
 const StyledPanel = styled.div`{
   position: relative;
   margin-top: 100px;
-  width: 1200px;
   display: flex;
   flex-direction: column;
-  height: 600px;
-  border-radius: 12px ;
-  background: black;
+  width: 1200px;
 }`
 
 const Heading = styled.h1`{
@@ -30,6 +27,7 @@ const Heading = styled.h1`{
 
 const ButtonWrapper = styled.div`{
   display: flex;
+  max-width: 1200px;
   justify-content: space-between;
   padding: 20px 50px;
   align-items: center;
@@ -47,6 +45,7 @@ export const AdminPanel = () => {
                 <Button text={'Del user by status'} color={'darkgreen'} bgColor={'green'}/>
                 <Button text={'Get with Max Org'} color={'white'} bgColor={'blue'}/>
             </ButtonWrapper>
+
         </StyledPanel>
     </StyledPanelWrapper>
 }
