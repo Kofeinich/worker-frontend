@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {Button} from "../components/button/Button";
+import {Workers} from "../components/workers/Workers";
 
 const StyledPanelWrapper = styled.section`{
   position: relative;
@@ -45,7 +46,7 @@ export const AdminPanel = () => {
                 <Button text={'Del user by status'} color={'darkgreen'} bgColor={'green'}/>
                 <Button text={'Get with Max Org'} color={'white'} bgColor={'blue'}/>
             </ButtonWrapper>
-
+            <Workers/>
         </StyledPanel>
     </StyledPanelWrapper>
 }
