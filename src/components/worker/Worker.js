@@ -9,7 +9,5 @@ export const Worker = observer(() => {
         WorkerStore.getWorkerInfo().then(res => res)
     },[])
 
-    return <main>
-        <h1> Have a nice day!</h1>
-    </main>
+    return <></>
 })
