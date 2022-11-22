@@ -5,7 +5,7 @@ const domainUrl = 'http://localhost:8080/workers';
 let convert = require('xml-js');
 
 export const getListOfWorkers = async (limit, pages) => {
-    const getWorkersList = `${domainUrl}?limit=${limit}&page=${pages}`;
+    const getWorkersList = `${domainUrl}?limit=${limit}&page=${pages}&sort_by=id`;
     const res = await axios.get(getWorkersList, {})
     return convert.xml2json(res.data, {compact: true, spaces: 4})
 }
