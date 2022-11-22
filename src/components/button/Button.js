@@ -14,8 +14,8 @@ const StyledButton = styled.button`{
 
 
 
-export const Button = ({text, color, bgColor}) => {
-    return <StyledButton color={color} bgColor={bgColor}>
+export const Button = ({text, color, bgColor, ...props}) => {
+    return <StyledButton color={color} bgColor={bgColor} {...props}>
         {text}
     </StyledButton>
 }
